@@ -10,3 +10,5 @@ users:
   password:
     min_length: 6
     max_length: 32
+  paging:
+    num_per_page: 5

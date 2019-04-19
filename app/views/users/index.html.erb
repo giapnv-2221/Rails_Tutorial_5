@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-sm-8">
+    <table>
+      <thead>
+      <tr>
+        <th><%= t "users.index.gravatar" %></th>
+        <th><%= t "users.index.name" %></th>
+        <th><%= t "users.index.email" %></th>
+      </tr>
+      </thead>
+      <tbody>
+      <%=render partial: "users/user_detail", collection: @users,as: "user" %>
+      </tbody>
+    </table>
+    <%= paginate @users, theme: "twitter-bootstrap-3" %>
+  </div>
+</div>

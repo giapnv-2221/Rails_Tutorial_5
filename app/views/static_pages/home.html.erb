@@ -4,6 +4,8 @@
   <h2>
     <%= link_to t("layouts.rails"), Settings.rails_host.host %>
   </h2>
-  <%= link_to t("static-pages.home.signup"), root_path, class: "btn btn-lg btn-primary" %>
+
+  <%= link_to t("static-pages.home.signup"), signup_path, class: "btn btn-lg btn-primary" %>
+
 </div>
 <%= link_to image_tag("rails.png", alt: "Rails logo"), Settings.rails_host.host %>
