@@ -1,0 +1,17 @@
+vi:
+  hello: "Hello world"
+  static-pages:
+    home:
+      title: "Trang chủ"
+      signup: "Đăng ký ngay!"
+    help:
+      title: "Hỗ trợ"
+    about:
+      title: "Thông tin"
+    login:
+      title: "Đăng nhập"
+  layouts:
+    footer:
+      news: "rails"
+      about: "Thông tin"
+      help: "Hỗ trợ"

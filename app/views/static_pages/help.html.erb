@@ -1,3 +1,5 @@
-<% provide(:title, "Help") %>
-<h1>StaticPages#help</h1>
-<p>Find me in app/views/static_pages/help.html.erb</p>
+<% provide :title, t("static-pages.help.title") %>
+<h1><%= t("static-pages.help.title") %></h1>
+<p><%= help_path %></p>
+<p><%= help_url %>></p>
+
