@@ -24,6 +24,13 @@ vi:
       help: "Hỗ trợ"
   users:
     alert:
-      success: "Thanh cong!"
-      danger: "That bai!"
+      success: "Thành công!"
+      danger: "Thất bại!"
     error: "Lỗi"
+  sessions:
+    username: "Tài khoản"
+    password: "Mật khẩu"
+    login: "Đăng nhập"
+    forgot_pass: "Quên mật khẩu"
+    newuser: "Chưa có tài khoản"
+    sign_up: "Đăng ký ngay!"

@@ -30,8 +30,8 @@
           placeholder: I18n.t("static-pages.signup.confirmpassword") %>
       </div>
       <div class="col-sm-4"></div>
-      <%= f.submit I18n.t("static-pages.signup.signup"),
-        class: "fadeIn fourth button center" %>
+      <%= f.submit I18n.t("static-pages.signup.signup"), class: "fadeIn fourth button center" %>
+      <%= link_to I18n.t("static-pages.signup.login"), login_path %>
     <% end %>
   </div>
 </div>

@@ -18,13 +18,20 @@ en:
       email: "E-mail"
       password: "Password"
       confirmpassword: "Confirm Password"
+      login: "Login here!"
   layouts:
     footer:
       news: "rails"
       about: "About"
       help: "Help"
     header:
-    rails: "Ruby on Rails"
+      rails: "Ruby on Rails"
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      login: "Login"
+      logout: "Logout"
   users:
     alert:
       success: "Success!"
@@ -35,3 +42,13 @@ en:
       name: "Name"
       email: "Email"
       detail: "Detail"
+  sessions:
+    username: "UserName"
+    password: "Password"
+    login: "Login"
+    forgot_pass: "Forgot password!"
+    newuser: "New user"
+    sign_up: "Sign Up now!"
+    alert:
+      danger: "Invalid email/password combination!"
+      success:
