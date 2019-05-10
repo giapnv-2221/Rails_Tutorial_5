@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   get "/help", to: "static_pages#help"
   get "/about", to: "static_pages#about"
   get "/login", to: "static_pages#login"
+  get "/signup", to: "static_pages#signup"
+  post "/signup", to: "users#new"
 
   root "static_pages#home"
 end
