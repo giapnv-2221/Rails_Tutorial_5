@@ -31,3 +31,21 @@
 
 en:
   hello: "Hello world"
+  app-name: "Sample app"
+  static-pages:
+    home:
+      title: "Home page"
+      signup: "Sign up now!"
+    help:
+      title: "Help page"
+    about:
+      title: "About page"
+    login:
+      title: "Login"
+  layouts:
+    footer:
+      news: "rails"
+      about: "About"
+      help: "Help"
+    header:
+    rails: "Ruby on Rails"

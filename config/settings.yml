@@ -1,0 +1,3 @@
+rails_host:
+  host: "http://railstutorial.org/"
+  new: "http://news.railstutorial.org/"
