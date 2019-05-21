@@ -42,6 +42,13 @@ en:
       title: "About page"
     login:
       title: "Login"
+    signup:
+      title: "Sign up"
+      signup: "Sign up"
+      username: "User name"
+      email: "E-mail"
+      password: "Password"
+      confirmpassword: "Confirm Password"
   layouts:
     footer:
       news: "rails"

@@ -10,6 +10,13 @@ vi:
       title: "Thông tin"
     login:
       title: "Đăng nhập"
+    signup:
+      title: "Đăng ký"
+      signup: "Đăng ký"
+      username: "Tên người dùng"
+      email: "E-mail"
+      password: "Mật khẩu"
+      confirmpassword: "Xác nhận mật khẩu"
   layouts:
     footer:
       news: "rails"
