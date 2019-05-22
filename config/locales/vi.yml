@@ -22,3 +22,8 @@ vi:
       news: "rails"
       about: "Thông tin"
       help: "Hỗ trợ"
+  users:
+    alert:
+      success: "Thanh cong!"
+      danger: "That bai!"
+    error: "Lỗi"
