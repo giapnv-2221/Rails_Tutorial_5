@@ -12,3 +12,5 @@ users:
     max_length: 32
   paging:
     num_per_page: 5
+  edit:
+    gravatar_host: "http://gravatar.com/emails"

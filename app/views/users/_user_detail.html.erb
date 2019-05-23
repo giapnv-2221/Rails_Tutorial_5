@@ -3,4 +3,11 @@
   <td><%= user.name %></td>
   <td><%= user.email %></td>
   <td><%= link_to t("users.index.detail"), user_path(user) %></td>
+  <td>
+    <% if current_user.admin? && !user.admin? %>
+      <%= link_to t("users.index.delete"), user, method: :delete,
+        data: {confirm: t("users.alert.sure"), class:"alert danger"} %>
+    <%end %>
+  </td>
+
 </tr>
