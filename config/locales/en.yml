@@ -46,6 +46,7 @@ en:
     username: "UserName"
     password: "Password"
     login: "Login"
+    remember_me: "Remember me on this computer!"
     forgot_pass: "Forgot password!"
     newuser: "New user"
     sign_up: "Sign Up now!"
