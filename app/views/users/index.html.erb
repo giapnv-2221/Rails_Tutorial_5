@@ -9,7 +9,7 @@
       </tr>
       </thead>
       <tbody>
-      <%=render partial: "users/user_detail", collection: @users,as: "user" %>
+      <%= render partial: "users/user_detail", collection: @users,as: "user" %>
       </tbody>
     </table>
     <%= paginate @users, theme: "twitter-bootstrap-3" %>
