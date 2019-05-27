@@ -41,6 +41,8 @@ en:
       deleted: "User has been deleted!"
       sure: "You sure?"
       error: "Failed! Please check again!"
+      activate: "Please check e-mail to activate your account"
+
     error: "error"
     index:
       gravatar: "Gravater"
@@ -69,6 +71,14 @@ en:
       savechange: "Save change!"
       change: "Change"
       success: "Profile updated!"
+    mail:
+      activation: "User activation"
+      resetpassword: "Reset password"
+      active: "active"
+      content-active: " Welcome to the My App! To activate your account. Click"
+    activation:
+      success: "Account is activated!"
+      error: "Invalid activation link!"
   sessions:
     username: "UserName"
     password: "Password"

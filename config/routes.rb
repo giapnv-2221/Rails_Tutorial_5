@@ -12,5 +12,6 @@ Rails.application.routes.draw do
   patch "/forgot-password", to: "sessions#forgot"
 
   resources :users
+  resources :account_activations, only: %i(edit)
   root "static_pages#home"
 end
