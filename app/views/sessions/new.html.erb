@@ -23,8 +23,10 @@
 
       <%= f.submit t "sessions.login", class: "btn btn-primary" %>
     <% end %>
-    <p><%= t("sessions.newuser") + "?" %>
+    <p>
+      <%= t("sessions.newuser") + "? " %>
       <%= link_to t("sessions.sign_up"), signup_path %>
+      <%= link_to t("sessions.forgot_pass"), new_password_reset_path %>
     </p>
   </div>
 </div>
