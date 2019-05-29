@@ -102,3 +102,6 @@ en:
     alert:
       danger: "Invalid email/password combination!"
       success:
+  microposts:
+    tittle: "Microposts"
+    time_ago: "Posted %{time} ago."
