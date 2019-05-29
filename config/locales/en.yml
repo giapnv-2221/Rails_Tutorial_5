@@ -79,6 +79,18 @@ en:
     activation:
       success: "Account is activated!"
       error: "Invalid activation link!"
+    forgot:
+      title: "Forgot Password"
+      email: "E-mail"
+      submit: "Submit"
+      info: "E-mail was sent with password reset instructions!"
+      error: "E-mail not found!"
+      content: " To reset your password. Click "
+      reset: "reset password"
+      expired: "Password reset has expired!"
+      error_empty: "cannot be empty!"
+      reset_success: "Password has been reset!"
+      token_invalid: "Invalid reset password link!"
   sessions:
     username: "UserName"
     password: "Password"

@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  attr_accessor :remember_token, :activation_token
+  attr_accessor :remember_token, :activation_token, :reset_token
 
   before_save :downcase_email
   before_create :create_activation_digest
@@ -12,7 +12,7 @@ class User < ApplicationRecord
     format: {with: VALID_EMAIL_REGEX}
   validates :password, presence: true,
     length: {minimum: Settings.users.password.min_length, maximum: Settings.users.password.max_length},
-    format: {with: VALID_PASSWORD_REGEX}
+    format: {with: VALID_PASSWORD_REGEX}, allow_nil: true
   has_secure_password
 
   scope :latest, -> {order("created_at desc")}
@@ -20,7 +20,7 @@ class User < ApplicationRecord
 
   def remember
     self.remember_token = User.new_token
-    update_attribute :remember_digest, User.digest(remember_token)
+    update_attributes remember_digest: User.digest(remember_token)
   end
 
   def authenticated? attribute, token
@@ -30,17 +30,30 @@ class User < ApplicationRecord
   end
 
   def forget
-    update_attribute :remember_digest, nil
+    update_attributes remember_digest: nil
   end
 
   def activate
-    update_attribute :activated,true
-    update_attribute :activated_at, Time.zone.now
+    update_attributes activated: true, activated_at: Time.zone.now
   end
 
   def send_activation_email
     UserMailer.account_activation(self).deliver_now
-    end
+  end
+
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update_attributes reset_digest: User.digest(reset_token),
+      reset_sent_at: Time.zone.now
+  end
+
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
+  end
+
+  def password_reset_expired?
+    reset_sent_at < Settings.users.expired_time.hours.ago
+  end
 
   private
 

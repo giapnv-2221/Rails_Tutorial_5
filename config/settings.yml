@@ -2,6 +2,7 @@ rails_host:
   host: "http://railstutorial.org/"
   new: "http://news.railstutorial.org/"
 users:
+  expired_time: 2
   name:
     min_length: 5
     max_length: 50
