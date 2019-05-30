@@ -15,3 +15,10 @@ users:
     num_per_page: 5
   edit:
     gravatar_host: "http://gravatar.com/emails"
+microposts:
+  content:
+    max_length: 140
+  paging:
+    num_per_page: 5
+  size: 50
+  default_size: 80

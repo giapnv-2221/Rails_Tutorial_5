@@ -15,6 +15,8 @@ class User < ApplicationRecord
     format: {with: VALID_PASSWORD_REGEX}, allow_nil: true
   has_secure_password
 
+  has_many :microposts, dependent: :destroy
+
   scope :latest, -> {order("created_at desc")}
   scope :get_list, -> {select("id,name,email,admin")}
 
