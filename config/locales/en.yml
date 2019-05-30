@@ -105,3 +105,14 @@ en:
   microposts:
     tittle: "Microposts"
     time_ago: "Posted %{time} ago."
+    compose: "Compose new micropost..."
+    size: 50
+    default_size: 80
+    delete: "Delete"
+    destroy_post: "The post has been delete!"
+    error: "Something error! Please check and try again!"
+  shared:
+    error_message:
+      content: "The form contains "
+    user_info:
+      view: "view my profile"
