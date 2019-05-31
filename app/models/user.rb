@@ -57,6 +57,14 @@ class User < ApplicationRecord
     reset_sent_at < Settings.users.expired_time.hours.ago
   end
 
+  def feed
+    microposts
+  end
+
+  def was? obj
+    self == obj
+  end
+
   private
 
     def create_activation_digest
@@ -70,7 +78,8 @@ class User < ApplicationRecord
 
   class << self
     def digest string
-      cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST : BCrypt::Engine.cost
+      cost = ActiveModel::SecurePassword.min_cost ?
+        BCrypt::Engine::MIN_COST : BCrypt::Engine.cost
       BCrypt::Password.create string, cost: cost
     end
 
