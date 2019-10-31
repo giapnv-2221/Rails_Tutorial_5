@@ -34,7 +34,7 @@ group :test do
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem "nokogiri", "~> 1.6", ">= 1.6.7"
+gem "nokogiri", "~> 1.10"
 gem "config"
 
 gem "kaminari"
